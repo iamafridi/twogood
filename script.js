@@ -24,3 +24,22 @@ videocon.addEventListener("mousemove",function(dets){
 })
 }
 videoconAnimation()
+
+function loadingAnnimation(){
+    gsap.from("#page1 h1",{
+        y:100,
+        opacity:0,
+        delay:0.5,
+        duration:0.9,
+        stagger:0.3
+    })
+    gsap.from("#page1 video-container",{
+        scale:0.8,
+        opacity:0,
+        delay:1.5,
+        duration:0.9,
+    })
+    
+}
+
+loadingAnnimation()
